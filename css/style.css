@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%);
+}
+
+.img1 {
+    width: 100% !important;
+}
+
+.create {
+    background-image: url(../img/create-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.contact__block {
+    background: #292b52;
+    border-radius: 20px;
+}
+
+.contact {
+    background-image: url(../img/contact-bg.png);
+
+}
+
+.contact__input {
+    width: 300px;
+    height: 40px;
+    opacity: 0.10000000149011612;
+    background: #F6F6F6;
+    border-radius: 10px;
+}
+
+.contact__btn {
+    width: 100px;
+    height: 40px;
+    margin-right: 20px !important;
+    border: none;
+    border-radius: 10px;
+}
+
+.footer__icons i {
+    background: #292b52;
+    border-radius: 50%;
+    color: white;
+    padding: 5px;
+}
+
+@media (max-width: 991px) {
+    .help__content {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .tab__content {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 460px) {
+    .help__img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .traffic__img {
+        width: 100%;
+    }
+}
+
+/* KeyFrames */
+
+.nav__logo:hover {
+    animation: animation 1s linear infinite;
+}
+
+.middle__img{
+    animation: middle 2s linear infinite;
+}
+
+.sponsor__img:hover{
+    animation: sponsor 1s linear infinite;
+}
+
+.text__anim{
+    animation: textAnim 1s linear infinite;
+}
+
+@keyframes animation {
+    0% {
+        transform: perspective(400px) rotateY(0deg);
+    }
+
+    50% {
+        transform: perspective(400px) translateZ(150px) rotateY(180deg);
+    }
+
+    100% {
+        transform: perspective(400px) rotateY(0deg);
+    }
+}
+
+@keyframes middle {
+    0%{
+        transform: perspective(400px) rotate3d(1,1,0,0deg);
+    }
+
+    50%{
+        transform: perspective(400px) rotate3d(1,1,0,180deg);
+    }
+
+    100%{
+        transform: perspective(400px) rotate3d(1,1,0,0deg);
+    }
+}
+
+@keyframes sponsor {
+    From{
+        transform: perspective(400px) rotateX(0deg);
+    }
+
+    To{
+        transform: perspective(400px) rotateX(360deg);
+    }
+}
+
+@keyframes textAnim {
+    0%{
+        text-shadow: 0 0 black;
+    }
+
+    50%{
+        text-shadow: 20px 20px 10px rgba(0,0,0,.5);
+    }
+
+    100%{
+        text-shadow: 0 0 black;
+    }
+}
